@@ -29,8 +29,15 @@ var qualification="Bacholer in Information Technology (BSIT)";
 alert(qualification);
 // task no 5
  var v="pizza";
+ document.write(v+"<br>");
  var v="pizz";
- alert(v+v);
+ document.write(v+"<br>");
+ var v="piz";
+ document.write(v+"<br>");
+ var v="pi";
+ document.write(v+"<br>");
+ var v="p";
+ document.write(v+"<br>");
 // task no 6
 var email="zameeralitunio@gmail.com";
 alert("my email is " + email);
@@ -502,7 +509,7 @@ else if (b===24){
 alert(b+" =  12")
 }
 else{alert(b+" =  "+b)}*/
-/*chapter no 14-16 Arrays 
+/*<----------------------------------chapter no 14-16 Arrays ----------------------------->
 // task no 1
 var a=[];
 // task no 2
@@ -528,6 +535,199 @@ var names=["Michael","John","Tony"];
 var score=[320,230,480];
 document.write("Score of "+names[0] +" is "+score[0]+" = "+(320/500)*100+"%<br>");
 document.write("Score of "+names[1] +" is "+score[1]+" = "+(230/500)*100+"%<br>");
-document.write("Score of "+names[2] +" is "+score[2]+" = "+(480/500)*100+"%<br>");*/
+document.write("Score of "+names[2] +" is "+score[2]+" = "+(480/500)*100+"%<br>");
 
 // <!-----------------------------I have can't complete becausse shortage of time----------------------------->
+//  task no 9
+var color=["red","green","blue",];
+color.unshift("orange","yellow");
+color.shift();
+color.pop();
+color.splice(2,0,"skyblue");
+color.splice(1,3);
+alert(color);
+var a=prompt("enter your choice color");
+var b=prompt("confirm if push(end add),pop(end out),unshift(start out,shift(start add)");
+
+if(b==="add"){
+    color.push(a);
+    document.write(color);
+}
+else if(b==="remove"){
+    color.pop(a);
+    document.write(color);
+}
+else if(b==="shift"){
+    color.shift(a);
+    document.write(color);
+}
+else if(b==="unshift"){
+    color.unshift(a);
+    document.write(color);
+}
+else {
+    document.write("error");
+}
+// task no 10
+var student=new Array(320,230,480,120);
+document.write("marks of students: "+student);
+student.sort();
+document.write("<br>marks of students in ordered: "+student);
+// task no 11
+var cities=new Array("Karachi","lahore","islamabad","Quetta","Peshawar");
+document.write("cities list:<br>"+cities);
+var citiesCopy=cities.slice(0,1);
+var a=cities.slice(3,4);
+document.write("<br> list of slected cities:<br>"+citiesCopy+" "+a);
+
+// task no 12
+var arr = ["This", " is ", " my ", " cat"];
+document.write("Array<br>"+arr);
+var a=arr.join();
+document.write("<br>String<br>"+a);
+// task no 13
+var devices=["keyboard","mouse","printer","monitor"];
+document.write("Devices:<br>"+devices);
+document.write("<br>out<br>"+devices.shift());
+document.write("<br>out<br>"+devices.shift());
+document.write("<br>out<br>"+devices.shift());
+document.write("<br>out<br>"+devices.shift());
+// task no 14
+var devices=["keyboard","mouse","printer","monitor"];
+document.write("Devices:<br>"+devices);
+document.write("<br>out<br>"+devices.pop());
+document.write("<br>out<br>"+devices.pop());
+document.write("<br>out<br>"+devices.pop());
+document.write("<br>out<br>"+devices.pop());
+
+// task no 15
+var a=new Array("Apple","Samsung", "Motorola", "Nokia", "Sony" , "Haier");
+document.write(a[0]+"<br>"+a[1]+"<br>"+a[2]+"<br>"+a[3]+"<br>"+a[4]+"<br>"+a[5]+"<br>");
+*/
+/*<-----------------------------------chapter no 17-20------------------------------------> 
+// task no 1
+var a=[
+    [],
+    []
+];
+// task no 2
+var a=[
+    [0,1,2,3],
+    [1,0,1,2],
+    [2,1,0,1],
+];
+var c=a.join();
+for(var b=0;b<3;b++){
+document.write(a[b]+"<br>");}
+// task no 3
+for(a=1;a<=10;a++){
+    document.write(a+"<br>");
+}
+// task no 4
+var a=+prompt("enter any number for table");
+var b=+prompt("give number for length of table");
+for(var c=1; c<=b;c++){
+    document.write("table "+a);
+    document.write("length "+b);
+    document.write(a+" * "+c+" = "+(a*c)+"<br>");
+}
+// task no 5
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+for(var a=0;a<fruits.length;a++){
+    document.write(fruits[a]+"<br>");
+}
+for(var a=0;a<fruits.length;a++){
+    document.write("element at index "+a+" at "+fruits[a]+"<br>");
+}
+// task no 6
+// a
+document.write("<h2>counting</h2>");
+for(var a=1;a<=15;a++){
+    document.write([a]+",");
+}
+// b
+document.write("<h2>reverse</h2>");
+for(var a=15;a>=1;a--){
+    document.write([a]+",");
+}
+// c
+document.write("<h2>even</h2>");
+for(var a=1;a<=20;a++){
+    if (a%2==0){
+    document.write(a+",");}
+}
+// d
+document.write("<h2>odd</h2>");
+for(var a=1;a<=20;a++){
+    if (a%2==1){
+    document.write(a+",");}
+}
+// e
+document.write("<h2>series</h2>");
+for(var a=1;a<=20;a++){
+    if (a%2==0){
+    document.write(a+"k"+",");}
+}
+// task no 7
+var b=prompt("Welcome to ABC bakery.what do you want to order sir/ma'am")
+var a = ["cake", "apple pie", "cookie", "chips", "patties"];
+for(var c=0;c<1;c++){
+if(b==="cake"){
+    document.write(b+" is avialable at index no "+(1+c));
+}
+else if(b==="apple pie"){
+    document.write(b+" is avialable at index no "+(2+c));
+}
+else if(b==="cookie"){
+    document.write(b+" is avialable at index no "+(3+c));
+}
+else if(b==="chips"){
+    document.write(b+" is avialable at index no "+(4+c));
+}
+else if(b==="patties"){
+    document.write(b+" is avialable at index no "+(5+c));
+}
+else{
+    document.write(b+" is not avaiable in our store ")
+}}
+// task no 8
+var a =[24, 53, 78, 91, 12];
+document.write("<br>Array items: "+a+"<br>");
+if(a[0]>a[1] && a[0]>a[2] && a[0]>a[3] && a[0]>a[4]){
+    document.write("largest number is "+a[0]);
+}
+else if(a[1]>a[0] && a[1]>a[2] && a[1]>a[3] && a[1]>a[4]){
+    document.write("largest number is "+a[1]);
+}
+else if(a[2]>a[0] && a[2]>a[1] && a[2]>a[3] && a[2]>a[4]){
+    document.write("largest number is "+a[2]);
+}
+else if(a[3]>a[0] && a[3]>a[1] && a[3]>a[2] && a[3]>a[4]){
+    document.write("largest number is "+a[3]);
+}
+else if(a[4]>a[0] && a[4]>a[1] && a[4]>a[2] && a[4]>a[3]){
+    document.write("largest number is "+a[4]);
+}
+// task no 9
+var a =[24, 53, 78, 91, 12];
+document.write("<br>Array items: "+a+"<br>");
+if(a[0]<a[1] && a[0]<a[2] && a[0]<a[3] && a[0]<a[4]){
+    document.write("smallest number is "+a[0]);
+}
+else if(a[1]<a[0] && a[1]<a[2] && a[1]<a[3] && a[1]<a[4]){
+    document.write("smallest number is "+a[1]);
+}
+else if(a[2]<a[0] && a[2]<a[1] && a[2]<a[3] && a[2]<a[4]){
+    document.write("smallest number is "+a[2]);
+}
+else if(a[3]<a[0] && a[3]<a[1] && a[3]<a[2] && a[3]<a[4]){
+    document.write("smallest number is "+a[3]);
+}
+else if(a[4]<a[0] && a[4]<a[1] && a[4]<a[2] && a[4]<a[3]){
+    document.write("smallest number is "+a[4]);
+}
+// // task no 10
+// for(var a=1; a<=20;a++){
+//     document.write(a*5+",");
+// }
+*/
